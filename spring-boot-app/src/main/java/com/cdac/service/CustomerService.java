@@ -41,5 +41,9 @@ public class CustomerService {
 		}
 	}
 	
+	public Customer get(int customerId) {
+		return customerRepository.fetch(customerId);
+	}
+	
 	
 }
